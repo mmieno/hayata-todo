@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/table_heading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp" >
+
+        <Space android:layout_width="match_parent"
+            android:layout_height="25dip"/>
+
+        <TableRow android:padding="10dp">
+            <TextView
+                android:id="@+id/caption"
+                android:textStyle="bold"
+                />
+        </TableRow>
+
+        <TableRow
+            android:background="#90E4EF" android:padding="10dp">
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="No"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:text="やること"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:id="@+id/yotei_header"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/heder_yotei"
+                android:clickable="true"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:id="@+id/jisseki_header"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/heder_jisseki"
+                android:clickable="true"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:id="@+id/kakunin_header"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/heder_kakunin"
+                android:clickable="true"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                />
+        </TableRow>
+
+        <include layout="@layout/table_row_layout"/>
+
+    </TableLayout>
+</LinearLayout>
